@@ -1,16 +1,16 @@
-  // 0 引入 用来发送请求的 方法 一定要把路径补全
-  import {request} from "../../request/index.js";
-  Page({
+// 0 引入 用来发送请求的 方法 一定要把路径补全
+import { request } from "../../request/index.js";
+Page({
   /**
    * 页面的初始数据
    */
   data: {
     // 轮播图数组
-    swiperList:[],
+    swiperList: [],
     // 导航 数组
-    catesList:[],
+    catesList: [],
     // 楼层数据
-    floorList:[]
+    floorList: [],
   },
 
   /**
@@ -27,35 +27,31 @@
     //   }
     // });
     this.getSwiperList();
-    this.getCateList(); 
+    this.getCateList();
     this.getFloorList();
- 
   },
   // 获取轮播图数据
-  getSwiperList(){
-    request({url:"/home/swiperdata"})
-    .then(result=>{
+  getSwiperList() {
+    request({ url: "/home/swiperdata" }).then((result) => {
       this.setData({
-              swiperList:result
-            })
-    })
+        swiperList: result,
+      });
+    });
   },
-   // 获取分类导航数据
-   getCateList(){
-    request({url:"/home/catitems"})
-    .then(result=>{
+  // 获取分类导航数据
+  getCateList() {
+    request({ url: "/home/catitems" }).then((result) => {
       this.setData({
-              catesList:result
-            })
-    })
+        catesList: result,
+      });
+    });
   },
   // 获取楼层数据数据
-  getFloorList(){
-    request({url:"/home/floordata"})
-    .then(result=>{
+  getFloorList() {
+    request({ url: "/home/floordata" }).then((result) => {
       this.setData({
-              floorList:result
-            })
-    })
+        floorList: result,
+      });
+    });
   },
-})
+});

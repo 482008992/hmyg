@@ -1,11 +1,10 @@
-
 Page({
-    handleGetUSerInfo(e){
-        // console.log(e);
-        const {userInfo}=e.detail;
-        wx.setStorageSync("userinfo",userInfo);
-        wx.navigateBack({
-            delta:1
-        })
-    }
-})
+  handleGetUSerInfo(e) {
+    // console.log(e);
+    const { userInfo } = e.detail;
+    wx.setStorageSync("userinfo", userInfo);
+    wx.navigateBack({
+      delta: 1,
+    });
+  },
+});
