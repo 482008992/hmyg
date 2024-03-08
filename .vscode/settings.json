@@ -2,7 +2,7 @@
   "js/ts.implicitProjectConfig.checkJs": false,
   "eslint.alwaysShowStatus": true,
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
+    "source.fixAll.eslint": "explicit"
   },
   "editor.formatOnSave": true,
   "eslint.validate": [

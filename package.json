@@ -1,0 +1,22 @@
+{
+  "name": "hmyg",
+  "version": "1.0.0",
+  "description": "test",
+  "main": "pages/index/index",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "git+https://github.com/482008992/hmyg.git",
+  "keywords": [
+    "wx-app"
+  ],
+  "author": "前端小白",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/482008992/hmyg/issues"
+  },
+  "homepage": "https://github.com/482008992/hmyg#readme"
+}
