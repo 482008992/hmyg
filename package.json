@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/482008992/hmyg/issues"
   },
-  "homepage": "https://github.com/482008992/hmyg#readme"
+  "homepage": "https://github.com/482008992/hmyg#readme",
+  "dependencies": {
+    "node-scss": "^7.0.3"
+  }
 }
